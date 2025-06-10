@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+
+using TaxiManager9000.Domain.Models;
 
 namespace TaxiManager9000.DataAccess.AdoRepositories
 {
-    internal class IUserRepository
+    public interface IUserRepository
     {
+        Task<IEnumerable<User>> GetAllUsersAsync();
+
+
     }
 }
